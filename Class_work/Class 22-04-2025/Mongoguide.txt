@@ -1,0 +1,18 @@
+use admin
+db.createUser({
+	user: "test_mongo",
+	pwd: "P4$$w0rd",
+	roles: [{ role: "readWrite", db: "enrollments_db" }]
+});
+
+use enrollments_db;
+db.createCollection("enrollments");  //Crea la colección que es como si fuera una tabla
+db.enrrollments.find({}); // Check if the collection is created
+
+db.createCollection("courses")
+db.corses.find({}) // es como el select de MySQL si dentro de los {} puedo definir que va buscar
+
+db.listCollectionsNames(); //Me llama las tablas existentes dentro de la bases de datos
+
+db.courses.inserteOne({name: "Databases", credits; 3})
+
