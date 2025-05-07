@@ -2,4 +2,5 @@ pydantic
 fastapi
 uvicorn
 pymongo
-pysco2
+psycopg2-binary
+python-dotenv
